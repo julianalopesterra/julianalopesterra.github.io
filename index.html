@@ -1,107 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Espaço Literário da Juliana</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Juliana Terra | Espaço Literário</title>
+
+<!-- Fontes -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Allura&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f8ff;
   
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #e6f2ff;
-      color: #2c3e50;
-    }
+  /* Estampa floral */
+  background-image: url('floral.jpg');
+  background-repeat: repeat;
+}
 
-    header {
-      background-color: #b3daff;
-      padding: 40px;
-      text-align: center;
-    }
+.overlay {
+  background-color: rgba(255,255,255,0.85);
+  min-height: 100vh;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-    }
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
 
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
+.assinatura {
+  font-family: 'Allura', cursive;
+  font-size: 70px;
+  color: #5c7fa3;
+  margin: 0;
+}
 
-    nav {
-      text-align: center;
-      padding: 15px;
-      background-color: #cce6ff;
-    }
+.subtitulo {
+  font-size: 18px;
+  color: #6c8cab;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
 
-    nav a {
-      text-decoration: none;
-      color: #2c3e50;
-      margin: 0 15px;
-      font-weight: 500;
-    }
+/* Navegação */
+nav {
+  text-align: center;
+  margin-top: 30px;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+nav a {
+  text-decoration: none;
+  color: #5c7fa3;
+  margin: 0 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
 
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-    }
+nav a:hover {
+  color: #2c3e50;
+}
 
-    .hero img {
-      width: 300px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
+/* Seção principal */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
 
-    .section {
-      padding: 50px 20px;
-      text-align: center;
-    }
+.hero img {
+  width: 280px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
 
-    .cards {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
+.section {
+  text-align: center;
+  padding: 60px 20px;
+}
 
-    .card {
-      background-color: white;
-      width: 280px;
-      padding: 20px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      transition: 0.3s;
-    }
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+.card {
+  background: white;
+  width: 260px;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
 
-    .card img {
-      width: 100%;
-      border-radius: 15px;
-    }
+.card:hover {
+  transform: translateY(-5px);
+}
 
-    footer {
-      background-color: #b3daff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-    }
-  </style>
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #6c8cab;
+  font-size: 14px;
+}
+
+</style>
 </head>
 
 <body>
 
+<div class="overlay">
+
 <header>
-  <h1>Espaço Literário da Juliana 📚</h1>
-  <p>Resumos, resenhas e reflexões pessoais</p>
+  <h1 class="assinatura">Juliana Terra</h1>
+  <p class="subtitulo">ESPAÇO DE LEITURA & REFLEXÃO</p>
 </header>
 
 <nav>
@@ -112,40 +132,41 @@
 </nav>
 
 <section class="hero">
-  <h2>Bem-vindo ao meu universo de leitura</h2>
-  <p>Um espaço para organizar ideias, aprender e compartilhar conhecimento.</p>
-  <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="Livros">
+  <p>Um jardim de ideias, livros e pensamentos.</p>
+  <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7" alt="Livro delicado">
 </section>
 
 <section class="section">
-  <h2>Últimos Conteúdos</h2>
+  <h2 style="color:#5c7fa3;">Últimos Escritos</h2>
 
   <div class="cards">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" alt="Livro aberto">
-      <h3>Resenha: Livro X</h3>
-      <p>Uma análise profunda sobre os principais temas e reflexões.</p>
+      <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Rosas e livro">
+      <h3>Resenha</h3>
+      <p>Reflexões profundas sobre uma leitura recente.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66" alt="Biblioteca">
-      <h3>Resumo: Livro Y</h3>
-      <p>Principais pontos organizados de forma clara e objetiva.</p>
+      <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d" alt="Livro aberto">
+      <h3>Resumo</h3>
+      <p>Principais ideias organizadas com clareza.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Pessoa lendo">
+      <img src="https://images.unsplash.com/photo-1473187983305-f615310e7daa" alt="Caderno e flores">
       <h3>Texto Autoral</h3>
-      <p>Reflexões pessoais sobre leitura, vida e aprendizado.</p>
+      <p>Palavras que florescem da alma.</p>
     </div>
 
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Juliana Terra | Feito com 💙</p>
+  © 2026 Juliana Lopes Terra 🌹
 </footer>
+
+</div>
 
 </body>
 </html>
