@@ -1,11 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>Resumos da Juliana</title>
   <meta charset="UTF-8">
+  <title>Espaço Literário da Juliana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #e6f2ff;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #b3daff;
+      padding: 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    nav {
+      text-align: center;
+      padding: 15px;
+      background-color: #cce6ff;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2c3e50;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero img {
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: white;
+      width: 280px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    footer {
+      background-color: #b3daff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Bem-vindo ao meu espaço literário 📚</h1>
-  <p>Aqui vou publicar meus resumos e reflexões.</p>
+
+<header>
+  <h1>Espaço Literário da Juliana 📚</h1>
+  <p>Resumos, resenhas e reflexões pessoais</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Resenhas</a>
+  <a href="#">Resumos</a>
+  <a href="#">Textos Autorais</a>
+</nav>
+
+<section class="hero">
+  <h2>Bem-vindo ao meu universo de leitura</h2>
+  <p>Um espaço para organizar ideias, aprender e compartilhar conhecimento.</p>
+  <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="Livros">
+</section>
+
+<section class="section">
+  <h2>Últimos Conteúdos</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" alt="Livro aberto">
+      <h3>Resenha: Livro X</h3>
+      <p>Uma análise profunda sobre os principais temas e reflexões.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66" alt="Biblioteca">
+      <h3>Resumo: Livro Y</h3>
+      <p>Principais pontos organizados de forma clara e objetiva.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Pessoa lendo">
+      <h3>Texto Autoral</h3>
+      <p>Reflexões pessoais sobre leitura, vida e aprendizado.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Juliana Terra | Feito com 💙</p>
+</footer>
+
 </body>
 </html>
