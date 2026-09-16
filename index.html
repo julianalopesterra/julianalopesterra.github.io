@@ -26,16 +26,22 @@ body {
 }
 
 /* Cabeçalho */
-header {
-  text-align: center;
-  padding: 80px 20px 40px;
+.header-container {
+  display: flex;
+  align-items: center;   /* alinha verticalmente */
+  justify-content: center; /* centraliza no espaço */
+  gap: 30px;             /* espaço entre imagem e título */
 }
 
 .assinatura {
-  display: block;
-  margin: 0 auto;
-  width: 250px;
+  width: 300px;          /* aumenta o tamanho da assinatura */
 }
+
+.titulo-site h1 {
+  font-family: 'Allura', cursive;
+  font-size: 60px;
+  color: #5c7fa3;
+  margin: 0;
 }
 
 .subtitulo {
@@ -121,10 +127,15 @@ footer {
 <div class="overlay">
 
 <header>
-  <img src="Copilot_20260916_200751.png" alt="Assinatura Juliana Lopes Terra" class="assinatura" width="250">
-  <p class="subtitulo">ESPAÇO DE LEITURA & REFLEXÃO</p>
+  <div class="header-container">
+    <img src="Copiloto_20260916_200751.png" alt="Assinatura Juliana Lopes Terra" class="assinatura">
+    <div class="titulo-site">
+      <h1>Espaço Literário</h1>
+      <p class="subtitulo">ESPAÇO DE LEITURA & REFLEXÃO</p>
+    </div>
+  </div>
 </header>
-
+  
 <nav>
   <a href="#">Home</a>
   <a href="#">Resenhas</a>
